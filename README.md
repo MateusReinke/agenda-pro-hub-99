@@ -20,7 +20,7 @@ cp .env.example .env
 docker compose up --build
 ```
 
-Acesse: <http://localhost:3000>
+Acesse: <http://localhost:3333>
 
 Login demo:
 
@@ -43,7 +43,7 @@ DATABASE_URL="postgresql://beauty_user:beauty_password@db:5432/beauty_app?schema
 POSTGRES_USER="beauty_user"
 POSTGRES_PASSWORD="beauty_password"
 POSTGRES_DB="beauty_app"
-APP_URL="http://localhost:3000"
+APP_URL="http://localhost:3333"
 JWT_SECRET="troque-essa-chave-em-producao"
 SEED_ADMIN_EMAIL="admin@demo.com"
 SEED_ADMIN_PASSWORD="123456"
