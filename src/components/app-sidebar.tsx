@@ -19,6 +19,7 @@ import {
   SidebarMenuItem,
   SidebarHeader,
 } from "@/components/ui/sidebar";
+import { TenantSwitcher } from "@/components/tenant-switcher";
 
 const items = [
   { title: "Dashboard", url: "/app/dashboard", icon: LayoutDashboard },
@@ -35,10 +36,7 @@ export function AppSidebar() {
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader>
-        <div className="flex items-center gap-2 px-2 py-1 font-semibold">
-          <Scissors className="h-5 w-5 text-primary" />
-          <span className="group-data-[collapsible=icon]:hidden">Beleza Agenda</span>
-        </div>
+        <TenantSwitcher />
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>

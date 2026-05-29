@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, Users, DollarSign, TrendingUp } from "lucide-react";
+import { useTenant } from "@/lib/tenant";
 
 export const Route = createFileRoute("/app/dashboard")({
   head: () => ({ meta: [{ title: "Dashboard" }] }),
@@ -21,10 +22,11 @@ const upcoming = [
 ];
 
 function Dashboard() {
+  const { currentTenant } = useTenant();
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold">Dashboard</h1>
+        <h1 className="text-2xl font-bold">Olá, {currentTenant.name}</h1>
         <p className="text-sm text-muted-foreground">Visão geral do seu salão.</p>
       </div>
 
