@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+:root { --bg: #fff7fb; --ink: #33243a; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: linear-gradient(135deg,#fff7fb 0%,#fff 45%,#f5f0ff 100%); }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; }
