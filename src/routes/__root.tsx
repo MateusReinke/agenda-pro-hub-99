@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { TenantProvider } from "@/lib/tenant";
 
 function NotFoundComponent() {
   return (
@@ -107,8 +108,6 @@ function RootShell({ children }: { children: React.ReactNode }) {
     </html>
   );
 }
-
-import { TenantProvider } from "@/lib/tenant";
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
